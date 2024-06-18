@@ -1,0 +1,30 @@
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: #CB9C6C;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 140px 0;
+    z-index: 5;
+    & .div_logo {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        & img {
+            height: 100px;
+        }
+    }
+    & .nav_header {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        gap: 20px;
+        & a {
+            font-family: 'Ubuntu', sans-serif;
+            color: #4D3A3B;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,250 @@
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./mobile.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.active-link {
+    color: white;
+    background-color: #4D3A3B; /* ou qualquer outra estilização que você desejar */
+}
+
+.imagem_inicio {
+    height: 598px;
+    background-image: url(../assets/vilaDoartesao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    height: 475px;
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-color-1 {
+    background-color: white;
+}
+
+.bg-color-2 {
+    background-color: #eaf0fc;
+}
+
+article {
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+}
+
+.lateral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    border-radius: 4px;
+    background-color: #FAD02C;
+    & h1 {
+        z-index: 0;
+        transform: rotate(-90deg);
+        height: 48px;
+        
+        
+        color: white;
+    }
+    
+}
+.text-contents {
+    
+    font-family: 'ubuntu';
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 10px #cfcfcf56;
+    border-radius: 4px;
+    
+    width: 1040px;
+    max-height: 373px;
+    padding: 30px;
+    & h5 {
+        margin-bottom: 16px;
+        font-size: 19.065px;
+    }
+    & .texts {
+        display: flex;
+    }
+}
+
+.sobre-text {
+    display: flex;
+    flex-direction: column;
+    & p {
+        color: #4D3A3B;
+        font-size: 13.79px;
+        margin-bottom: 16px;
+    }
+}
+
+.left {
+    padding-right: 15px;
+}
+
+.right {
+    padding-left: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1140px;
+    position: relative;
+    margin: auto;
+    
+    & .l-esquerda {
+        height: 288.25px;
+        width: 100px;
+        left: -16px;
+        position: absolute;
+        z-index: 0;
+    }
+
+    & .l-direita {
+        height: 288.25px;
+        width: 100px;
+        right: -16px;
+        position: absolute;
+        z-index: 0;
+    }
+
+        
+    & .esquerda {
+        z-index: 1;
+        padding: 0 15px;
+        & img {
+            border-radius: 4px;
+            width: 540px;
+        }
+    }  
+
+    & .direita {
+        width: 475px;
+        padding: 0 15px;
+        & h6 {
+            color: #495057;
+            font-size: 19.928px;
+            margin-bottom: 16px;
+        }
+        & p {
+            color: #444444;
+            font-size: 13.9856px;
+            margin-bottom: 16px;
+        }
+        & p.cor-clara {
+            color: #ADB5BD;
+        }
+    }
+}
+
+@media (max-width: 1205px) {
+    
+    .content {
+        min-width: 100px;
+        width: 900px;
+    }
+
+}
+
+@media (max-width: 973px) {
+    .content {
+        min-width: 100px;
+        width: 767px;
+
+        & .esquerda {
+            & img {
+                width: 400px;
+            }
+        }
+
+        & .l-esquerda {
+            height: 213.51px;
+            margin-left: 10px;
+        }
+    
+        & .l-direita {
+            height: 213.51px;
+            margin-right: 10px;
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        height: 550px;
+    }
+
+    .lateral {
+        display: none;
+    }
+    .text-contents {
+    
+        font-family: 'ubuntu';
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px 10px #cfcfcf56;
+        border-radius: 4px;
+        
+        width: 1040px;
+        max-height: 373px;
+        padding: 30px;
+        & h5 {
+            margin-bottom: 16px;
+            font-size: 19.065px;
+        }
+        & .texts p {
+            font-size: 10px;
+            display: flex;
+        }
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        & .direita {
+            width: 100%;
+        }
+
+        & .esquerda {
+            
+            width: 100%;
+            & img {
+                max-width: 90%;
+            }
+        }
+    }
+}

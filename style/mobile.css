@@ -1,0 +1,137 @@
+@import url('./header.css');
+@import url('./footer.css');
+
+@media (max-width: 1205px) {
+    footer {
+        font-size: 13.5px;
+        & .logos {
+            
+            & img {
+            
+                width: 129px;
+            }
+            & .vila-logo {
+                width: 170px;
+            }
+            
+            & .prefeitura-logo {
+                width: 271px;
+            }
+        }
+
+        & .linha {
+            height: 63%;
+        }
+
+        & .footer-information {
+            margin-right: 10px;
+            
+        }
+    }
+}
+
+@media (max-width: 973px) {
+    footer {
+        font-size: 11px;
+        & .logos {
+            
+            & img {
+            
+                width: 100px;
+            }
+            & .vila-logo {
+                width: 131px;
+            }
+            
+            & .prefeitura-logo {
+                width: 210px;
+            }
+        }
+
+        & .linha {
+            height: 53%;
+            margin: 0 30px 0 20px;
+        }
+
+        & .footer-information {
+            margin-right: 20px;
+            
+        }
+    }
+}
+
+.header-mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .header-mobile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+
+        & .div_logo {
+            margin-left: 20px;
+        }
+        & i {
+            border: 1px solid #00000033;
+            padding: 0 5px;
+            border-radius: 4px;
+            margin: 0 20px 0 auto;
+            
+            font-size: 40px;
+        }
+        
+        & .menu-lateral {
+            margin-top: 70px;
+            display: none;
+            position: fixed;
+            flex-direction: column;
+            background-color:#CB9C6C;
+            top: 0;
+            right: 0;
+            width: 100%;
+
+            .botao-close {
+                margin: 10px;
+                font-size: 60px;
+                & i:hover {
+                    cursor: pointer;
+                }
+            }
+            & nav {
+                & ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0px;
+                    text-align: right;
+                    list-style-type: none;
+
+                    & li {
+                        border-bottom: solid 1px;
+                    }
+                    & li a {
+                        font-size: 25px;
+                        display: block;
+                        
+                        padding: 15px 10px 15px 0;
+                        }
+                        & a:hover {
+                                color: white;
+                                background-color: #4D3A3B;
+                            }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 0%;
+        flex-direction: column;
+        & .logos {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+}

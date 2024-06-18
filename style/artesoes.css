@@ -1,9 +1,17 @@
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./mobile.css');
+
+.art-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .card-container {
     border: solid 1px;
     border-radius: 10px;
-    margin: auto;
     width: 500px;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     height: 70px;
