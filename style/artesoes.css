@@ -1,7 +1,13 @@
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./mobile.css');
+@import url('./home.css');
 
+
+
+main {
+    padding: 150px 0 80px;
+}
 .art-list {
     display: flex;
     flex-direction: column;
